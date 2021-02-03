@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="icon" href="./imgs/p1.jpg" type="img/jpg">
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./js/jquery-3.5.1.js"></script>
+        <script src="./js/scripts.js"></script>
+        <title>The Perfect Pizza </title> 
+    </head>
+    <body>
+        <div class="main container">
+            <div class="header">
+                <p class="boom text-bold text-center ">The Perfect Pizza</p>
+                <img class="pizza" src="images.jpg">
+            </div>
+            <div class="menu">
+                <h3 class="menu text-center">Menu :</h3>
+                
+                <div class="row" id="boom"> 
+                    <div class="col-md-4">
+                        <div>
+                            <img class="card-img-top" id="image" src="images1.jpg">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="text-bold">Dessert Pizza</h5>
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <img class="card-img-top"  id="image" src="images2.jpg">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="text-bold">Neapolitan Pizza</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <img class="card-img-top" id="image" src="images3.jpg">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="text-bold">Chicago Pizza</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" > 
+                    <div class="col-md-4">
+                        <div> 
+                            <img class="card-img-top" id="image" src="images4.jpg">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="text-bold">Stuffed Pizza</h5>
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div> 
+                            <img class="card-img-top" id="image" src="images5.jpg">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="text-bold">Crispy Pizza</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <img class="card-img-top" id="image" src="images6.jpg">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="text-bold">Glutten free Pizza</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="deliver">
+               <div class="row order">
+                   <div class="col-md-6">
+                       <div class="col-md-8">
+                       
+                        <form id="order-info">
+                            <label>Choose your pizza size</label>
+                            <select class="form-control" name="size" id="size">
+                                <option value="7">Large 8000RWF </option>
+                                <option value="5">Medium 5500RWF </option>
+                                <option value="4">Small 3500RWF </option>
+                            </select>
+                            <br>
+                            <label>Choose your desired crust type</label>
+                            <select class="form-control" name="" id="crust">
+                            <option value="1" name="crust">stuffed crust 1500RWF
+                            <option value="1" name="crust">Crispy 1200RWF
+                            <option value="2" name="crust">Glutten free 2500RWF
+                            </select> 
+                            <br>
+                            <label>Choose your a topping (800RWF/each)</label> <br>
+                            <input value="1" type="checkbox" id="mush">Mushrooms
+                            <input value="1" type="checkbox" id="onion">Onions
+                            <br> <br>
+                            <label for="">Input Quantity</label>
+                            <input class="form-control form-group" type="text" id="numberofpizza">
+                            <button name="button" type="submit" id="submit" value="Check-Out"
+                                onclick="calctotalPrice()">Checkout</button>
+                                <form onsubmit="return clearInput()">
+                                    <input class="clear" type="submit" value="Clear input">
+                                </form>
+                        </form>
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                       <div class="col-md-8">
+                        <button type="submit" name="button" id="delivery">Delivery</button>
+                            <div id="deliveryForm">
+                                <h3>Enter delivery info:</h3>
+                                <form id="delivery-info">
+                                    <label for="name">Name</label>
+                                    <input class="form-control" type="text" name="" id="name" required="required">
+                                    <label for="location">Location</label>
+                                    <input class="form-control" type="text" id="location" placeholder="Ex: Kanombe">
+                                    <label for="phonenumber">Phone Number</label>
+                                    <input class="form-control" type="tel" placeholder="07......" id="number"> <br>
+                                    <button type="submit" name="button" id="submit">Make delivery</button>
+                                    <button type="submit" name="button" id="cancel">Cancel delivery</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+              </div> 
+            
+        </div>
+    </body>
+</html>
